@@ -31,5 +31,25 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Person": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "Category": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Device": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Review": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Question": {
+    "dataSource": "mongo",
+    "public": true
   }
 }
