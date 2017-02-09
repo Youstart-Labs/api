@@ -52,5 +52,9 @@
   "Question": {
     "dataSource": "mongo",
     "public": true
+  },
+  "container": {
+    "dataSource": "file",
+    "public": true
   }
 }
