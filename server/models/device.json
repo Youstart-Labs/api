@@ -22,6 +22,9 @@
       "type": "string"
     }
   },
+  "mixins": {
+    "TimeStamp": true
+  },
   "validations": [],
   "relations": {
     "category": {
