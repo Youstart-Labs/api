@@ -4,13 +4,12 @@
     "connector": "memory"
   },
   "mongo": {
-    "host": "mlab.com",
-    "port": 45389,
-    "url": "mongodb://rohan:rohan@ds145389.mlab.com:45389/youstart",
-    "database": "youstart",
-    "password": "rohan",
+    "host": "127.0.0.1",
+    "port": 27017,
+    "database": "loopbacktest",
+    "password": "",
     "name": "mongo",
-    "user": "rohan",
+    "user": "",
     "connector": "mongodb"
   },
   "myfile": {
