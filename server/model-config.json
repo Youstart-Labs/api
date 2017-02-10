@@ -56,5 +56,8 @@
   "container": {
     "dataSource": "file",
     "public": true
+  },
+   "Email": {
+    "dataSource": "mailgun"
   }
 }
