@@ -8,7 +8,7 @@ module.exports = function(server) {
   var router = server.loopback.Router();
   router.get('/', server.loopback.status());
   
-  router.get('/reset-password', function(req, res, next) {
+  router.post('/reset-password', function(req, res, next) {
     if (!req.accessToken) return res.sendStatus(401);
 
     //verify passwords match
