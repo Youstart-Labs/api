@@ -15,7 +15,9 @@
     ]
   },
   "User": {
-    "dataSource": "mongo"
+    "dataSource": "mongo",
+    "public": false
+
   },
   "AccessToken": {
     "dataSource": "mongo",
@@ -35,7 +37,7 @@
   },
   "Person": {
     "dataSource": "mongo",
-    "public": false
+    "public": true
   },
   "Category": {
     "dataSource": "mongo",

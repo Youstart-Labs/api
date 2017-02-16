@@ -3,11 +3,11 @@
 module.exports = function(server) {
   // Install a `/` route that returns server status
 
-  var User = server.models.User;
+  var Person = server.models.Person;
 
   var router = server.loopback.Router();
   router.get('/', server.loopback.status());
-  
+
   router.post('/reset-password', function(req, res, next) {
     if (!req.accessToken) return res.sendStatus(401);
 
@@ -18,7 +18,7 @@ module.exports = function(server) {
       return res.sendStatus(400, new Error('Passwords do not match'));
     }
 
-    User.findById(req.accessToken.userId, function(err, user) {
+    Person.findById(req.accessToken.userId, function(err, user) {
       if (err) return res.sendStatus(404);
       user.updateAttribute('password', req.body.password, function(err, user) {
       if (err) return res.sendStatus(404);
