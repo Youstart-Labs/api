@@ -17,7 +17,6 @@
   "User": {
     "dataSource": "mongo",
     "public": false
-
   },
   "AccessToken": {
     "dataSource": "mongo",
@@ -59,7 +58,7 @@
     "dataSource": "file",
     "public": true
   },
-   "Email": {
+  "Email": {
     "dataSource": "mailgun"
   }
 }

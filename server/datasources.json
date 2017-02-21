@@ -19,14 +19,16 @@
     "root": "./server/storage"
   },
   "file": {
+    "name": "file",
     "connector": "loopback-component-storage",
     "provider": "filesystem",
     "root": "./server/storage"
   },
-    "emailDs": {
+  "emailDs": {
     "name": "emailDs",
     "connector": "mail",
-    "transports": [{
+    "transports": [
+      {
         "type": "smtp",
         "host": "smtp.gmail.com",
         "secure": true,
@@ -38,11 +40,13 @@
           "user": "",
           "pass": ""
         }
-      }]
+      }
+    ]
   },
   "mailgun": {
-        "connector": "loopback-connector-mailgun",
-        "apikey": "key-55926f4a678c42180a02d8e58e7e7e82",
-        "domain": "pixnary.com"
-    }
+    "name": "mailgun",
+    "connector": "loopback-connector-mailgun",
+    "apikey": "key-55926f4a678c42180a02d8e58e7e7e82",
+    "domain": "pixnary.com"
+  }
 }
